@@ -95,10 +95,24 @@ Layout Styles
 }
 
 @media (min-width: 48em) {
-  .btn {
+  .btn-primary {
     padding: 10px 15px !important;
-    font-size: 1.125em;
+    font-size: 1.125em !important;
+    height: 40px;
+  }
 
+  .btn-nav {
+    padding: 10px 15px !important;
+    font-size: 1.125em !important;
+    height: 40px;
+  }
+}
+
+@media (min-width: 48em) {
+  body .testimonial-primary {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-height: 400px;
   }
 }
 
@@ -119,8 +133,6 @@ Modules
   border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
-  padding: 12px 30px;
-  font-size: 1.313em;
   font-weight: bold;
   border-radius: 4px;
   transition: all 0.3s ease 0s;
@@ -130,6 +142,8 @@ Modules
   background: #8DC63F;
   border-color: #8DC63F;
   color: white;
+  padding: 12px 30px;
+  font-size: 1.313em;
 }
 
 .btn-primary:hover {
@@ -140,6 +154,22 @@ Modules
 
 .btn-nav {
   color: white;
+  padding: 12px 30px;
+  font-size: 1.313em;
+}
+
+.btn-hero {
+  background: none;
+  border-color: white;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.750em;
+  height: 60px;
+}
+
+.btn-hero:hover {
+  background: white;
+  color: #8DC63F;
 }
 
 /*Header Modules*/
@@ -213,6 +243,33 @@ Modules
 
 .hero-subtitle + button {
   margin-top: 25px;
+}
+
+/* Testimonial module */
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-body {
+  position: relative;
+}
+
+.testimonial-primary {
+  background-color: #594a42;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-height: 460px;
+}
+
+.testimonial-primary.bg-image > img {
+  opacity: 0.55;
+}
+
+.testimonial-secondary {
+  padding-bottom: 50px;
+  font-size: 2.625em;
 }
 
 /*Background Modules*/
